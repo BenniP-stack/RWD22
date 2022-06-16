@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@react-spring/parallax": "^9.4.5",
+    "jquery": "^3.6.0"
+  }
+}
