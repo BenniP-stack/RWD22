@@ -36,7 +36,8 @@ body {
 .intro h1 {
     position: absolute;
     top: 60%;
-    left: 28.5%;
+    left: 26%;
+    padding-left: 5vw;
     font-family: "SERIF";
     line-height: .88;
     transform: translate(-50%, -50%);
@@ -163,6 +164,22 @@ footer a:hover {
     color: lightgrey;
 }
 
+@media (max-width: 1600px) {
+    .intro h1 {
+        position: absolute;
+        top: 65vh;
+        left: 29vw;
+        width: 100%;
+        padding-left: 24vw;
+        font-family: "SERIF";
+        line-height: .88;
+        transform: translate(-50%, -50%);
+        font-size: 110px;
+        color: #f4f4f2;
+        margin: 2rem 0;
+    }
+}
+
 @media (max-width: 1580px) {
     .intro {
         position: relative;
@@ -190,7 +207,8 @@ footer a:hover {
         position: absolute;
         top: 70%;
         left: 30vw;
-        padding-left: 0px;
+        width: 100%;
+        padding-left: 24vw;
         font-family: "SERIF";
         line-height: .88;
         transform: translate(-50%, -50%);
@@ -201,7 +219,7 @@ footer a:hover {
     .intro img {
         position: absolute;
         top: 90%;
-        left: 43px;
+        left: 60px;
         overflow: hidden;
         max-width: 70%;
         height: auto;
@@ -209,7 +227,7 @@ footer a:hover {
     .intro p {
         position: absolute;
         top: 80%;
-        left: 45px;
+        left: 62px;
         line-height: 15px;
         font-family: "myFirstFont";
         margin-block-start: 1em;
@@ -231,6 +249,21 @@ footer a:hover {
         z-index: 1;
         left: 85%;
         top: 73%;
+    }
+}
+
+@media (max-width: 1135px) {
+    .intro h1 {
+        position: absolute;
+        top: 65%;
+        padding-left: 9vw;
+        left: 47vw;
+        font-family: "SERIF";
+        line-height: .88;
+        transform: translate(-50%, -50%);
+        font-size: 90px;
+        color: #f4f4f2;
+        margin: 2rem 0;
     }
 }
 
@@ -282,8 +315,154 @@ footer a:hover {
     }
 }
 
-@media (max-width: 960px) {}
+@media (max-width: 960px) {
+    .intro h1 {
+        position: absolute;
+        top: 58%;
+        padding-left: 6vw;
+        left: 47vw;
+        font-family: "SERIF";
+        line-height: .88;
+        transform: translate(-50%, -50%);
+        font-size: 73px;
+        color: #f4f4f2;
+        margin: 2rem 0;
+    }
+    .intro img {
+        position: absolute;
+        top: 87%;
+        left: 3.5vw;
+        overflow: hidden;
+        max-width: 70%;
+        height: auto;
+    }
+    .intro p {
+        position: absolute;
+        top: 72%;
+        padding-top: 5vh;
+        left: 31px;
+        line-height: 15px;
+        font-size: 13px;
+        font-family: "myFirstFont";
+        margin-block-start: 1em;
+        margin-inline-start: 0px;
+        color: #f4f4f2;
+    }
+    .logo {
+        position: absolute;
+        z-index: 1;
+        top: 3.1%;
+        left: 3.1%;
+    }
+    .logo img {
+        max-width: 55px;
+    }
+    #bm {
+        position: absolute;
+        width: 100px;
+        z-index: 1;
+        left: 82%;
+        top: 80%;
+    }
+}
 
-@media (max-width: 620px) {}
+@media (max-width: 620px) {
+    .intro h1 {
+        position: absolute;
+        top: 58%;
+        padding-left: 6vw;
+        left: 50.5vw;
+        font-family: "SERIF";
+        line-height: .88;
+        transform: translate(-50%, -50%);
+        font-size: 60px;
+        color: #f4f4f2;
+        margin: 2rem 0;
+    }
+    .intro img {
+        position: absolute;
+        top: 82%;
+        left: 7vw;
+        overflow: hidden;
+        max-width: 85%;
+        height: auto;
+    }
+    .intro p {
+        position: absolute;
+        top: 71%;
+        padding-top: 5vh;
+        left: 7vw;
+        line-height: 15px;
+        font-size: 15px;
+        font-family: "myFirstFont";
+        margin-block-start: 1em;
+        margin-inline-start: 0px;
+        color: #f4f4f2;
+    }
+    .logo {
+        position: absolute;
+        z-index: 1;
+        top: 5%;
+        left: 6.2%;
+    }
+    .logo img {
+        max-width: 65px;
+    }
+    #bm {
+        position: absolute;
+        width: 85px;
+        z-index: 1;
+        left: 42vw;
+        top: 87.6%;
+    }
+}
 
-@media (max-width: 480px) {}
+@media (max-width: 480px) {
+    .intro h1 {
+        position: absolute;
+        top: 68%;
+        padding-left: 6vw;
+        font-family: "SERIF";
+        line-height: .88;
+        transform: translate(-50%, -50%);
+        font-size: 68px;
+        color: #f4f4f2;
+        margin: 2rem 0;
+    }
+    .intro img {
+        position: absolute;
+        top: 94%;
+        left: 6vw;
+        overflow: hidden;
+        max-width: 89.5%;
+        height: auto;
+    }
+    .intro p {
+        position: absolute;
+        top: 82%;
+        padding-top: 5vh;
+        left: 6vw;
+        line-height: 15px;
+        font-size: 14px;
+        font-family: "myFirstFont";
+        margin-block-start: 1em;
+        margin-inline-start: 0px;
+        color: #f4f4f2;
+    }
+    .logo {
+        position: absolute;
+        z-index: 1;
+        top: 3%;
+        left: 6.2%;
+    }
+    .logo img {
+        max-width: 65px;
+    }
+    #bm {
+        position: absolute;
+        width: 85px;
+        z-index: 1;
+        left: 39vw;
+        top: 46vh;
+    }
+}
