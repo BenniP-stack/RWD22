@@ -19,7 +19,7 @@ let delay = 0.2;
 
 //Scenes
 let heroVideo = new ScrollMagic.Scene({
-        duration: 1800,
+        duration: 2000,
         triggerElement: intro,
         triggerHook: 0
     })
@@ -78,33 +78,6 @@ let scrollInsScene = new ScrollMagic.Scene({
     .setTween(scrollInsAnim)
     .addTo(controller);
 
-//TODO Last slide mit info (tl maybe?) call to action button etc.
-//TODO Anpassung auf mobile endgeräte
-
-//parallax timeline animation
-// let timeline = new TimelineMax();
-
-// timeline.to(".rock", 5, { y: -300 })
-//     .to(".girl1", 5, { y: -200 }, "-=5")
-//     .fromTo(".bg1", { y: -65 }, { y: 0, duration: 5 }, "-=5")
-//     .to(".content", 5, { top: "0%" }, "-=5")
-//     .to(".bg1", { height: "100vh" })
-//     .to(".girl1", { height: "100vh" })
-//     .to(".rock", { height: "100vh" })
-//     .fromTo(".content-images", { opacity: 0 }, { opacity: 1, duration: 3 })
-//     .fromTo(".text", { opacity: 0 }, { opacity: 1, duration: 3 })
-
-
-// // let scene = new ScrollMagic.Scene({
-// //         triggerElement: "section",
-// //         duration: "250%",
-// //         triggerHook: 0,
-// //     })
-// //     // .addIndicators({ name: "ParaScroll", colorEnd: "#000000" })
-// //     .setTween(timeline)
-// //     .setPin("section")
-// //     .addTo(controller);
-
 // scroll indicator
 var animation = bodymovin.loadAnimation({
     container: document.getElementById("bm"),
@@ -113,3 +86,26 @@ var animation = bodymovin.loadAnimation({
     autoplay: true,
     path: "./media/data.json"
 })
+
+//TODO ScrollTrigger statt ScrollMagic dafür benutzen? idk
+//TODO Anpassung auf mobile endgeräte
+
+//parallax timeline animation
+const parallaxSection = document.getElementsByClassName("parallax-section");
+let timeline = new TimelineMax();
+
+timeline
+    .to(".kubik", 10, { y: -50 })
+    .fromto(".podest", { y: -50 }, { y: 150, duration: 10 }, "-=10")
+    .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
+
+
+let scene = new ScrollMagic.Scene({
+        triggerElement: parallaxSection,
+        duration: "250%",
+        triggerHook: 0,
+    })
+    .addIndicators({ name: "ParaScroll", colorEnd: "#000000" })
+    .setTween(timeline)
+    .setPin(parallaxSection)
+    .addTo(controller);
