@@ -91,21 +91,42 @@ var animation = bodymovin.loadAnimation({
 //TODO Anpassung auf mobile endgeräte
 
 //parallax timeline animation
-const parallaxSection = document.getElementsByClassName("parallax-section");
-let timeline = new TimelineMax();
+// var parallaxSection = document.getElementsByClassName("parallax-section");
+// let timeline = new TimelineMax();
 
-timeline
-    .to(".kubik", 10, { y: -50 })
-    .fromto(".podest", { y: -50 }, { y: 150, duration: 10 }, "-=10")
-    .fromTo(".bg1", { y: -50 }, { y: 0, duration: 10 }, "-=10")
+// timeline
+//     .to(".kubik", 6, { y: -120 })
+//     .to(".podest", 6, { y: -90 }, "-=4")
+//     .fromTo(".bg1", { y: -50 }, { y: 0, duration: 6 }, "-=6")
 
 
-let scene = new ScrollMagic.Scene({
-        triggerElement: parallaxSection,
-        duration: "250%",
-        triggerHook: 0,
-    })
-    .addIndicators({ name: "ParaScroll", colorEnd: "#000000" })
-    .setTween(timeline)
-    .setPin(parallaxSection)
-    .addTo(controller);
+// let scene = new ScrollMagic.Scene({
+//         triggerElement: section,
+//         duration: "350%",
+//         triggerHook: 0.5,
+//     })
+//     .addIndicators({ name: "ParaScroll", colorEnd: "#000000" })
+//     .setTween(timeline)
+//     .addTo(controller);
+
+gsap.utils.toArray(".sellPoint").forEach(section => {
+    let tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: section,
+            start: "center center",
+            end: () => "+=" + section.offsetWidth,
+            scrub: true,
+            pin: true,
+            anticipatePin: 1
+        },
+        defaults: { ease: "none" }
+    });
+    tl
+        .to(".podest", 4, { y: -50 })
+        .to(".kubik", 4, { y: -75 }, "-=4")
+        .to(".bg1", 4, { y: 5 }, "-=4")
+        .fromTo(section.querySelector(".text1"), { xPercent: 70, y: 900, opacity: 0 }, { xPercent: 70, y: 325, opacity: 1, duration: 4 }, 0)
+        .fromTo(section.querySelector(".text2"), { xPercent: 70, y: 900, opacity: 0 }, { xPercent: 70, y: 385, opacity: 1, duration: 4 })
+        .fromTo(section.querySelector(".callToAction"), { xPercent: 408, y: 0, opacity: 0 }, { xPercent: 408, y: -598, opacity: 1, duration: 4 })
+
+});

@@ -22,6 +22,10 @@ body {
 
 /* intro / video on scroll */
 
+section {
+    height: 100vh;
+}
+
 .intro {
     height: 100vh;
 }
@@ -133,9 +137,8 @@ body {
     top: 0;
 }
 
-section {
-    height: 100vh;
-}
+
+/* footer */
 
 footer {
     position: relative;
@@ -184,26 +187,69 @@ footer a:hover {
     width: 100%;
     position: absolute;
     height: 110vh;
-    object-fit: cover;
     z-index: -1;
 }
 
-
-/* .content {
-    width: 100%;
-    background: rgb(255, 255, 255);
-    min-height: 100vh;
-    z-index: 2;
-    position: absolute;
+.paraPiece {
+    margin-top: -10vh;
+    overflow: hidden;
 }
 
-.content-button {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    min-height: 60vh;
+.bg1 {
+    padding-top: -15px;
+    min-width: 100vw;
+    min-height: 110vh;
+}
+
+.podest {
+    min-height: 120vh;
+}
+
+.text {
+    position: relative;
+    z-index: 4;
+    background-color: transparent;
+}
+
+.sellPoint h2,
+h3 {
+    position: absolute;
+    font-family: "courierSTD";
+    color: #f4f4f2;
+    font-size: 50px;
+}
+
+.sellPoint h3 {
+    font-size: 34.75px;
+}
+
+
+/* button */
+
+.callToAction {
+    position: absolute;
+    color: white;
+    font-family: "courierSTD";
+    font-size: 35.7px;
+    padding: 10px;
+    padding-left: 75px;
+    padding-right: 75px;
+    background-color: transparent;
+    border: solid #FFFFFF 3px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
     text-align: center;
-} */
+    z-index: 5;
+    transition: 0.25s;
+}
+
+.callToAction:hover {
+    background: white;
+    border: solid white 3px;
+    text-decoration: none;
+    color: black;
+}
 
 
 /* media queries */
