@@ -19,7 +19,7 @@ let delay = 0.2;
 
 //Scenes
 let heroVideo = new ScrollMagic.Scene({
-        duration: 2000,
+        duration: 20000,
         triggerElement: intro,
         triggerHook: 0
     })
@@ -37,8 +37,6 @@ setInterval(() => {
     video.currentTime = delay;
 }, 25); //Framerate "Fix"
 
-//------
-//TODO fix the 2nd vid bro, alt: do a lil parallax ting w the render and ScrollTrigger (Airpods)
 
 //Text animation
 const textAnim = gsap.fromTo(text, 2, { opacity: 1 }, { opacity: 0 });
@@ -87,27 +85,8 @@ var animation = bodymovin.loadAnimation({
     path: "./media/data.json"
 })
 
-//TODO ScrollTrigger statt ScrollMagic dafür benutzen? idk
 //TODO Anpassung auf mobile endgeräte
 
-//parallax timeline animation
-// var parallaxSection = document.getElementsByClassName("parallax-section");
-// let timeline = new TimelineMax();
-
-// timeline
-//     .to(".kubik", 6, { y: -120 })
-//     .to(".podest", 6, { y: -90 }, "-=4")
-//     .fromTo(".bg1", { y: -50 }, { y: 0, duration: 6 }, "-=6")
-
-
-// let scene = new ScrollMagic.Scene({
-//         triggerElement: section,
-//         duration: "350%",
-//         triggerHook: 0.5,
-//     })
-//     .addIndicators({ name: "ParaScroll", colorEnd: "#000000" })
-//     .setTween(timeline)
-//     .addTo(controller);
 
 gsap.utils.toArray(".sellPoint").forEach(section => {
     let tl = gsap.timeline({
@@ -127,6 +106,6 @@ gsap.utils.toArray(".sellPoint").forEach(section => {
         .to(".bg1", 4, { y: 5 }, "-=4")
         .fromTo(section.querySelector(".text1"), { xPercent: 70, y: 900, opacity: 0 }, { xPercent: 70, y: 325, opacity: 1, duration: 4 }, 0)
         .fromTo(section.querySelector(".text2"), { xPercent: 70, y: 900, opacity: 0 }, { xPercent: 70, y: 385, opacity: 1, duration: 4 })
-        .fromTo(section.querySelector(".callToAction"), { xPercent: 408, y: 0, opacity: 0 }, { xPercent: 408, y: -598, opacity: 1, duration: 4 })
+        .fromTo(section.querySelector(".callToAction"), { xPercent: 408, y: 0, opacity: 0 }, { xPercent: 408, y: -598, opacity: 1, duration: 2 })
 
 });
