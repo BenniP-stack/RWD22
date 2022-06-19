@@ -268,6 +268,60 @@ h3 {
         color: #f4f4f2;
         margin: 2rem 0;
     }
+    .parallax-container img {
+        width: 100%;
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        min-height: 120vh;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .sellPoint h2,
+    h3 {
+        top: -6vh;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 45px;
+    }
+    .sellPoint h3 {
+        font-size: 29.75px;
+        padding-left: 7px;
+    }
+    .callToAction {
+        margin-top: 50px;
+        left: -13.3vw;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 35.7px;
+        padding: 10px;
+        padding-left: 75px;
+        padding-right: 75px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
+    }
 }
 
 @media (max-width: 1580px) {
@@ -340,6 +394,60 @@ h3 {
         left: 85%;
         top: 73%;
     }
+    .parallax-container img {
+        width: 100%;
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        min-height: 120vh;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .sellPoint h2,
+    h3 {
+        top: -6vh;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 45px;
+    }
+    .sellPoint h3 {
+        font-size: 29.75px;
+        padding-left: 7px;
+    }
+    .callToAction {
+        margin-top: 67px;
+        left: -13.3vw;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 35.7px;
+        padding: 10px;
+        padding-left: 75px;
+        padding-right: 75px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
+    }
 }
 
 @media (max-width: 1135px) {
@@ -354,6 +462,62 @@ h3 {
         font-size: 90px;
         color: #f4f4f2;
         margin: 2rem 0;
+    }
+    .parallax-container img {
+        min-width: 100vw;
+        width: 100%;
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        min-height: 120vh;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .sellPoint h2,
+    h3 {
+        top: -9rem;
+        left: -5rem;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 35px;
+    }
+    .sellPoint h3 {
+        font-size: 24.75px;
+        left: -3.9em;
+    }
+    .callToAction {
+        margin-top: 9.6rem;
+        left: -30rem;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 35.7px;
+        padding: 7px;
+        padding-left: 72px;
+        padding-right: 72px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
     }
 }
 
