@@ -85,9 +85,6 @@ var animation = bodymovin.loadAnimation({
     path: "./media/data.json"
 })
 
-//TODO Anpassung auf mobile endgeräte
-
-
 gsap.utils.toArray(".sellPoint").forEach(section => {
     let tl = gsap.timeline({
         scrollTrigger: {
@@ -109,3 +106,5 @@ gsap.utils.toArray(".sellPoint").forEach(section => {
         .fromTo(section.querySelector(".callToAction"), { xPercent: 408, y: 0, opacity: 0 }, { xPercent: 408, y: -598, opacity: 1, duration: 2 })
 
 });
+
+//TODO Anpassung auf mobile endgeräte

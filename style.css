@@ -508,6 +508,9 @@ h3 {
 }
 
 @media (max-width: 480px) {
+    .intro {
+        overflow: hidden;
+    }
     .intro h1 {
         position: absolute;
         top: 68%;
