@@ -419,6 +419,61 @@ h3 {
     }
     .sellPoint h2,
     h3 {
+        top: -7rem;
+        left: -7rem;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 45px;
+    }
+    .sellPoint h3 {
+        font-size: 29.75px;
+        padding-left: 7px;
+    }
+    .callToAction {
+        margin-top: 8rem;
+        left: -21rem;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 35.7px;
+        padding: 10px;
+        padding-left: 75px;
+        padding-right: 75px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
+    }
+    .parallax-container img {
+        width: 100%;
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        min-height: 120vh;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .sellPoint h2,
+    h3 {
         top: -6vh;
         position: absolute;
         font-family: "courierSTD";
@@ -430,7 +485,7 @@ h3 {
         padding-left: 7px;
     }
     .callToAction {
-        margin-top: 67px;
+        margin-top: 50px;
         left: -13.3vw;
         position: absolute;
         color: white;
@@ -464,23 +519,31 @@ h3 {
         margin: 2rem 0;
     }
     .parallax-container img {
-        min-width: 100vw;
-        width: 100%;
+        min-width: 100%;
+        width: auto;
         position: absolute;
         height: 110vh;
         z-index: -1;
     }
     .paraPiece {
+        min-width: 100vw;
+        width: 100vw;
+        height: auto;
         margin-top: -10vh;
         overflow: hidden;
     }
     .bg1 {
+        left: -3rem;
         padding-top: -15px;
         min-width: 100vw;
         min-height: 110vh;
     }
     .podest {
+        left: -5.83rem;
         min-height: 120vh;
+    }
+    .kubik {
+        left: -2.8rem;
     }
     .text {
         position: relative;
@@ -490,26 +553,26 @@ h3 {
     .sellPoint h2,
     h3 {
         top: -9rem;
-        left: -5rem;
+        left: -7rem;
         position: absolute;
         font-family: "courierSTD";
         color: #f4f4f2;
-        font-size: 35px;
+        font-size: 30px;
     }
     .sellPoint h3 {
-        font-size: 24.75px;
-        left: -3.9em;
+        font-size: 19.75px;
+        left: -5.83em;
     }
     .callToAction {
-        margin-top: 9.6rem;
-        left: -30rem;
+        margin-top: 14rem;
+        left: -63.5rem;
         position: absolute;
         color: white;
         font-family: "courierSTD";
-        font-size: 35.7px;
+        font-size: 30px;
         padding: 7px;
-        padding-left: 72px;
-        padding-right: 72px;
+        padding-left: 65px;
+        padding-right: 65px;
         background-color: transparent;
         border: solid #FFFFFF 3px;
         text-decoration: none;
@@ -567,6 +630,70 @@ h3 {
         left: 82%;
         top: 80%;
     }
+    .parallax-container img {
+        min-width: 100%;
+        width: auto;
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        min-width: 100vw;
+        width: 100vw;
+        height: auto;
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        left: -13.1rem;
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        left: -17rem;
+        min-height: 120vh;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .kubik {
+        left: -13rem;
+    }
+    .sellPoint h2,
+    h3 {
+        top: -4.8rem;
+        left: -7rem;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 30px;
+    }
+    .sellPoint h3 {
+        font-size: 19.75px;
+        left: -5.83em;
+    }
+    .callToAction {
+        margin-top: 14rem;
+        left: -63.5rem;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 30px;
+        padding: 7px;
+        padding-left: 65px;
+        padding-right: 65px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
+    }
 }
 
 @media (max-width: 960px) {
@@ -618,18 +745,76 @@ h3 {
         left: 82%;
         top: 80%;
     }
+    .parallax-container img {
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        left: 0;
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        left: -2.65rem;
+        min-width: 100%;
+        min-height: 120vh;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .sellPoint h2,
+    h3 {
+        top: -11rem;
+        left: -7rem;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 30px;
+    }
+    .sellPoint h3 {
+        margin-top: -1rem;
+        font-size: 19.75px;
+        left: -5.83em;
+    }
+    .callToAction {
+        margin-top: 17.5rem;
+        left: -63.5rem;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 30px;
+        padding: 7px;
+        padding-left: 65px;
+        padding-right: 65px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
+    }
 }
 
 @media (max-width: 620px) {
     .intro h1 {
         position: absolute;
-        top: 58%;
+        top: 52%;
         padding-left: 6vw;
         left: 50.5vw;
         font-family: "SERIF";
         line-height: .88;
         transform: translate(-50%, -50%);
-        font-size: 60px;
+        font-size: 56px;
         color: #f4f4f2;
         margin: 2rem 0;
     }
@@ -643,7 +828,7 @@ h3 {
     }
     .intro p {
         position: absolute;
-        top: 71%;
+        top: 68%;
         padding-top: 5vh;
         left: 7vw;
         line-height: 15px;
@@ -656,22 +841,84 @@ h3 {
     .logo {
         position: absolute;
         z-index: 1;
-        top: 5%;
+        top: 7%;
         left: 6.2%;
     }
     .logo img {
-        max-width: 65px;
+        max-width: 50px;
     }
     #bm {
         position: absolute;
         width: 85px;
         z-index: 1;
-        left: 42vw;
-        top: 87.6%;
+        left: 40vw;
+        top: 20%;
+    }
+    .parallax-container img {
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        margin-top: 0;
+        left: -1.5em;
+        min-width: 100%;
+        min-height: 120vh;
+    }
+    .kubik {
+        min-width: 100%;
+        margin-top: -5px;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .sellPoint h2,
+    h3 {
+        top: -14.5rem;
+        left: -5rem;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 25px;
+    }
+    .sellPoint h3 {
+        margin-top: -1rem;
+        font-size: 14.75px;
+        left: -4.8em;
+    }
+    .callToAction {
+        margin-top: 25.5rem;
+        left: -44rem;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 24px;
+        padding: 7px;
+        padding-left: 40px;
+        padding-right: 40px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
     .intro {
         overflow: hidden;
     }
@@ -721,5 +968,67 @@ h3 {
         z-index: 1;
         left: 39vw;
         top: 46vh;
+    }
+    .parallax-container img {
+        position: absolute;
+        height: 110vh;
+        z-index: -1;
+    }
+    .paraPiece {
+        margin-top: -10vh;
+        overflow: hidden;
+    }
+    .bg1 {
+        padding-top: -15px;
+        min-width: 100vw;
+        min-height: 110vh;
+    }
+    .podest {
+        margin-top: 0;
+        left: -1.5em;
+        min-width: 100%;
+        min-height: 120vh;
+    }
+    .kubik {
+        min-width: 100%;
+        margin-top: 4px;
+    }
+    .text {
+        position: relative;
+        z-index: 4;
+        background-color: transparent;
+    }
+    .sellPoint h2,
+    h3 {
+        top: -16.5rem;
+        left: -5rem;
+        position: absolute;
+        font-family: "courierSTD";
+        color: #f4f4f2;
+        font-size: 20px;
+    }
+    .sellPoint h3 {
+        margin-top: -1rem;
+        font-size: 10.75px;
+        left: -6.2em;
+    }
+    .callToAction {
+        margin-top: 28.5rem;
+        left: -36rem;
+        position: absolute;
+        color: white;
+        font-family: "courierSTD";
+        font-size: 17px;
+        padding: 7px;
+        padding-left: 35px;
+        padding-right: 35px;
+        background-color: transparent;
+        border: solid #FFFFFF 3px;
+        text-decoration: none;
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+        z-index: 5;
+        transition: 0.25s;
     }
 }
